@@ -419,7 +419,7 @@ header {
     height: 100px;
     z-index: 13;
     animation: animecl1 25s linear infinite;
-    -webkit-animation: animecl1 25s linear infinite;
+    -webkit-animation: animecl1 40s linear infinite;
 }
 
 @keyframes animecl1 {
@@ -446,8 +446,8 @@ header {
     width: 150px;
     height: 100px;
     z-index: 10;
-    animation: animecl2 25s linear infinite;
-    -webkit-animation: animecl2 25s linear infinite;
+    animation: animecl2 45s linear infinite;
+    -webkit-animation: animecl2 45s linear infinite;
 }
 
 @keyframes animecl2 {
@@ -474,8 +474,8 @@ header {
     width: 50px;
     height: 100px;
     z-index: 10;
-    animation: animecl3 28s linear infinite;
-    -webkit-animation: animecl3 28s linear infinite;
+    animation: animecl3 50s linear infinite;
+    -webkit-animation: animecl3 50s linear infinite;
 }
 
 @keyframes animecl3 {
@@ -530,8 +530,8 @@ header {
     width: 100px;
     height: 50px;
     z-index: 10;
-    animation: animecl5 45s linear infinite;
-    -webkit-animation: animecl5 45s linear infinite;
+    animation: animecl5 55s linear infinite;
+    -webkit-animation: animecl5 55s linear infinite;
 }
 
 @keyframes animecl5 {
@@ -558,8 +558,8 @@ header {
     width: 100px;
     height: 50px;
     z-index: 10;
-    animation: animecl5 50s linear infinite;
-    -webkit-animation: animecl5 50s linear infinite;
+    animation: animecl5 60s linear infinite;
+    -webkit-animation: animecl5 60s linear infinite;
 }
 
 #cloud6 {
@@ -569,8 +569,8 @@ header {
     width: 100px;
     height: 50px;
     z-index: 10;
-    animation: animecl6 45s linear infinite;
-    -webkit-animation: animecl6 45s linear infinite;
+    animation: animecl6 55s linear infinite;
+    -webkit-animation: animecl6 55s linear infinite;
 }
 
 @keyframes animecl6 {
