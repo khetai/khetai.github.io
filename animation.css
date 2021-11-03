@@ -10,7 +10,7 @@ body {
     justify-content: center;
     align-items: center;
     /* min-height: 100vh; */
-    background-color: white;
+    background-color: rgb(10, 9, 9);
 }
 
 header {
@@ -692,11 +692,35 @@ footer {
     bottom: 0px;
     width: 100%;
     background: #3586ff;
-    min-height: 100px;
+    min-height: 20px;
     padding: 20px 50px;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+
+#mayak {
+    position: absolute;
+    bottom: 40px;
+    width: 200px;
+    height: 300px;
+    z-index: 1000;
+}
+
+#light {
+    position: absolute;
+    bottom: 245px;
+    left: 103px;
+    width: 100px;
+    height: 100px;
+    background: transparent;
+    z-index: 1005;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    box-shadow: 500px 0 2000px #eeee6b, 400px 0 400px #ffff5b, 300px 0 300px #ffff5b, 200px 0 100px #ffff5b;
 }
 
 footer .wave {
