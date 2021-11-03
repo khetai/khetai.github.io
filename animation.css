@@ -707,7 +707,8 @@ footer {
     z-index: 1000;
 }
 
-#light {
+
+/* #light {
     position: absolute;
     bottom: 245px;
     left: 103px;
@@ -721,7 +722,7 @@ footer {
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
     box-shadow: 500px 0 2000px #eeee6b, 400px 0 400px #ffff5b, 300px 0 300px #ffff5b, 200px 0 100px #ffff5b;
-}
+} */
 
 footer .wave {
     position: absolute;
