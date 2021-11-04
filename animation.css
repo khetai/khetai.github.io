@@ -66,15 +66,15 @@ header {
     position: absolute;
     top: 20px;
     right: 80px;
-    width: 40px;
-    height: 40px;
-    background: #fff;
+    width: 50px;
+    height: 50px;
+    background: transparent;
     border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
-    /* box-shadow: 0 0 40px #ffff5b, 0 0 60px #ffff5b, 0 0 80px #ffff5b, 0 0 100px #ffff5b; */
+    /* box-shadow: 0 0 40px #c4c49d, 0 0 60px #c4c49d, 0 0 80px #c4c49d, 0 0 100px #c4c49d; */
 }
 
 #star1 {
@@ -157,6 +157,64 @@ header {
     left: 550px;
     width: 50px;
     height: 50px;
+    z-index: 14;
+}
+
+#light1 {
+    position: absolute;
+    top: 120px;
+    left: 40px;
+    width: 80px;
+    height: 80px;
+    z-index: 14;
+}
+
+#light12 {
+    display: none;
+    position: absolute;
+    top: 120px;
+    left: -28px;
+    width: 160px;
+    height: 100px;
+    z-index: 14;
+}
+
+#light123 {
+    display: none;
+    position: absolute;
+    top: 120px;
+    left: 35px;
+    width: 160px;
+    height: 100px;
+    z-index: 14;
+}
+
+#light2 {
+    position: absolute;
+    top: 120px;
+    left: 280px;
+    width: 80px;
+    height: 80px;
+    z-index: 14;
+}
+
+#light22 {
+    display: none;
+    position: absolute;
+    top: 120px;
+    left: 212px;
+    width: 160px;
+    height: 100px;
+    z-index: 14;
+}
+
+#light223 {
+    display: none;
+    position: absolute;
+    top: 120px;
+    left: 275px;
+    width: 160px;
+    height: 100px;
     z-index: 14;
 }
 
@@ -342,7 +400,7 @@ header {
     z-index: 10;
 }
 
-.tre4 {
+#tre4 {
     position: absolute;
     top: 80px;
     left: 870px;
@@ -351,7 +409,7 @@ header {
     z-index: 11;
 }
 
-.tre31 {
+#tre31 {
     position: absolute;
     top: 60px;
     left: 840px;
@@ -360,7 +418,7 @@ header {
     z-index: 11;
 }
 
-.tre4 {
+#tre30 {
     position: absolute;
     top: 80px;
     left: 850px;
@@ -369,7 +427,7 @@ header {
     z-index: 11;
 }
 
-.tre41 {
+#tre41 {
     position: absolute;
     top: 70px;
     left: 870px;
@@ -378,7 +436,7 @@ header {
     z-index: 11;
 }
 
-.tre5 {
+#tre5 {
     position: absolute;
     top: 80px;
     left: 900px;
@@ -387,7 +445,7 @@ header {
     z-index: 11;
 }
 
-.tre51 {
+#tre51 {
     position: absolute;
     top: 80px;
     left: 920px;
@@ -396,7 +454,7 @@ header {
     z-index: 11;
 }
 
-.tre52 {
+#tre52 {
     position: absolute;
     top: 80px;
     left: 880px;
@@ -405,7 +463,16 @@ header {
     z-index: 13;
 }
 
-.tre6 {
+#tre53 {
+    position: absolute;
+    top: 80px;
+    left: 870px;
+    width: 100px;
+    height: 100px;
+    z-index: 13;
+}
+
+#tre6 {
     position: absolute;
     top: 60px;
     left: 920px;
@@ -414,7 +481,7 @@ header {
     z-index: 10;
 }
 
-.tre7 {
+#tre7 {
     position: absolute;
     top: 60px;
     left: 905px;
@@ -423,7 +490,7 @@ header {
     z-index: 10;
 }
 
-.tre8 {
+#tre8 {
     position: absolute;
     top: 40px;
     left: 930px;
@@ -432,7 +499,7 @@ header {
     z-index: 10;
 }
 
-.tre9 {
+#tre9 {
     position: absolute;
     top: 50px;
     left: 950px;
@@ -722,8 +789,6 @@ footer {
     bottom: 0px;
     width: 100%;
     background: #3586ff;
-    min-height: 20px;
-    padding: 20px 50px;
     justify-content: center;
     align-items: center;
     flex-direction: column;
