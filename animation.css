@@ -31,6 +31,7 @@ header {
     border-radius: 0 0 20px 20px;
     box-shadow: -10px -10px 15px rgba(255, 255, 255, 0.9), 8px 8px 25px rgba(0, 0, 0, 0.5);
     border: 1px solid #ffffff;
+    border-top: 0px;
     background-color: rgb(130, 188, 235);
     justify-content: center;
     align-items: center;
@@ -42,6 +43,8 @@ header {
 }
 
 .sun {
+    cursor: pointer;
+    z-index: 11;
     position: absolute;
     top: 20px;
     left: 80px;
@@ -54,6 +57,33 @@ header {
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
     box-shadow: 0 0 40px #ffff5b, 0 0 60px #ffff5b, 0 0 80px #ffff5b, 0 0 100px #ffff5b;
+}
+
+.moon {
+    display: none;
+    cursor: pointer;
+    z-index: 11;
+    position: absolute;
+    top: 20px;
+    right: 80px;
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    /* box-shadow: 0 0 40px #ffff5b, 0 0 60px #ffff5b, 0 0 80px #ffff5b, 0 0 100px #ffff5b; */
+}
+
+#star1 {
+    position: absolute;
+    display: none;
+    top: -5px;
+    width: 100%;
+    height: 50%;
+    z-index: 5;
 }
 
 .road {
@@ -445,7 +475,7 @@ header {
     left: 150px;
     width: 150px;
     height: 100px;
-    z-index: 10;
+    z-index: 12;
     animation: animecl2 45s linear infinite;
     -webkit-animation: animecl2 45s linear infinite;
 }
@@ -473,7 +503,7 @@ header {
     left: 450px;
     width: 50px;
     height: 100px;
-    z-index: 10;
+    z-index: 13;
     animation: animecl3 50s linear infinite;
     -webkit-animation: animecl3 50s linear infinite;
 }
@@ -501,7 +531,7 @@ header {
     left: 480px;
     width: 100px;
     height: 100px;
-    z-index: 10;
+    z-index: 14;
     animation: animecl4 30s linear infinite;
     -webkit-animation: animecl4 30s linear infinite;
 }
@@ -529,7 +559,7 @@ header {
     left: 680px;
     width: 100px;
     height: 50px;
-    z-index: 10;
+    z-index: 14;
     animation: animecl5 55s linear infinite;
     -webkit-animation: animecl5 55s linear infinite;
 }
@@ -557,7 +587,7 @@ header {
     left: 600px;
     width: 100px;
     height: 50px;
-    z-index: 10;
+    z-index: 13;
     animation: animecl5 60s linear infinite;
     -webkit-animation: animecl5 60s linear infinite;
 }
@@ -568,7 +598,7 @@ header {
     left: 880px;
     width: 100px;
     height: 50px;
-    z-index: 10;
+    z-index: 14;
     animation: animecl6 55s linear infinite;
     -webkit-animation: animecl6 55s linear infinite;
 }
@@ -596,7 +626,7 @@ header {
     left: 780px;
     width: 100px;
     height: 50px;
-    z-index: 10;
+    z-index: 13;
     animation: animecl7 30s linear infinite;
     -webkit-animation: animecl7 30s linear infinite;
 }
@@ -624,7 +654,7 @@ header {
     left: 1080px;
     width: 100px;
     height: 50px;
-    z-index: 10;
+    z-index: 14;
     animation: animecl98 35s linear infinite;
     -webkit-animation: animecl98 35s linear infinite;
 }
@@ -635,7 +665,7 @@ header {
     left: 1080px;
     width: 100px;
     height: 50px;
-    z-index: 10;
+    z-index: 13;
     animation: animecl98 35s linear infinite;
     -webkit-animation: animecl98 35s linear infinite;
 }
@@ -699,6 +729,16 @@ footer {
     flex-direction: column;
 }
 
+.footerng {
+    position: relative;
+    bottom: 0px;
+    width: 100%;
+    background: #3586ff;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
 #mayak {
     position: absolute;
     bottom: 40px;
@@ -734,6 +774,16 @@ footer .wave {
     background-size: 1000px 100px;
 }
 
+.waveng {
+    position: absolute;
+    top: -100px;
+    left: 0px;
+    width: 100%;
+    height: 100px;
+    background: url(img/waveng.png);
+    background-size: 1000px 100px;
+}
+
 footer .wave#wave1 {
     z-index: 1000;
     opacity: 1;
@@ -759,6 +809,38 @@ footer .wave#wave3 {
 }
 
 footer .wave#wave4 {
+    z-index: 999;
+    opacity: 0.7;
+    bottom: 20px;
+    animation: animatewave_02 3s linear infinite;
+    -webkit-animation: animatewave_02 3s linear infinite;
+}
+
+footer .waveng#wave1 {
+    z-index: 1000;
+    opacity: 1;
+    bottom: 0;
+    animation: animatewave 4s linear infinite;
+    -webkit-animation: animatewave 4s linear infinite;
+}
+
+footer .waveng#wave2 {
+    z-index: 999;
+    opacity: 0.5;
+    bottom: 10px;
+    animation: animatewave_02 4s linear infinite;
+    -webkit-animation: animatewave_02 4s linear infinite;
+}
+
+footer .waveng#wave3 {
+    z-index: 1000;
+    opacity: 0.2;
+    bottom: 0;
+    animation: animatewave 3s linear infinite;
+    -webkit-animation: animatewave 3s linear infinite;
+}
+
+footer .waveng#wave4 {
     z-index: 999;
     opacity: 0.7;
     bottom: 20px;
