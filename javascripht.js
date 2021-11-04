@@ -43,6 +43,7 @@ function funk1(x) {
     document.getElementById("trees7").src = "img/treesng.png";
     document.getElementById("trees8").src = "img/trees2ng.png";
     document.getElementById("otlar").src = "img/otlarng.png";
+    document.getElementById("phon").src = "img/phone2ng.png";
     // document.getElementById("wave1").style.background = "url(img/waveng.png)";
     document.getElementById("wave1").setAttribute("class", "waveng");
     document.getElementById("wave2").setAttribute("class", "waveng");
@@ -52,18 +53,19 @@ function funk1(x) {
     document.getElementById("light123").setAttribute("style", "display: block;");
     document.getElementById("light22").setAttribute("style", "display: block;");
     document.getElementById("light223").setAttribute("style", "display: block;");
+    document.getElementById("light32").setAttribute("style", "display: block;");
+    document.getElementById("light323").setAttribute("style", "display: block;");
+    document.getElementById("light42").setAttribute("style", "display: block;");
+    document.getElementById("light423").setAttribute("style", "display: block;");
+    document.getElementById("light52").setAttribute("style", "display: block;");
+    document.getElementById("light523").setAttribute("style", "display: block;");
+    document.getElementById("light62").setAttribute("style", "display: block;");
+    document.getElementById("light623").setAttribute("style", "display: block;");
     // document.getElementsById("fr").setAttribute("class", "footerng")
 
 };
-s = '';
-a = '1112031584';
+
 
 function funk2() {
-    for (i = 1; i < length(a); i++) {
-        if (a[i] % 2 == a[i - 1] % 2) {
-            s += max(a[i], a[i - 1]);
-        }
-    }
-    console.log(s)
-    goto_url('www.multisoft.se/' + s);
+
 };
