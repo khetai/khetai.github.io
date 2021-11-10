@@ -112,7 +112,7 @@ function funk2() {
     document.getElementById("trees423").src = "img/trees.png";
     document.getElementById("trees5").src = "img/trees.png";
     document.getElementById("trees6").src = "img/trees.png";
-    document.getElementById("trees7").src = "img/treesng.png";
+    document.getElementById("trees7").src = "img/trees.png";
     document.getElementById("trees8").src = "img/trees2.png";
     document.getElementById("otlar").src = "img/otlar.png";
     document.getElementById("phon").src = "img/phone2.png";
