@@ -116,6 +116,16 @@ function funk2() {
     document.getElementById("trees8").src = "img/trees2.png";
     document.getElementById("otlar").src = "img/otlar.png";
     document.getElementById("phon").src = "img/phone2.png";
+    document.getElementById("cloud2").src = "img/—Pngtree—white cloud hd transparent png_3595710.png";
+    document.getElementById("cloud3").src = "img/—Pngtree—white cloud hd transparent png_3595710.png";
+    document.getElementById("cloud4").src = "img/—Pngtree—white cloud hd transparent png_3595710.png";
+    document.getElementById("cloud1").src = "img/—Pngtree—white cloud hd transparent png_3595710.png";
+    document.getElementById("cloud5").src = "img/cl1.png";
+    document.getElementById("cloud51").src = "img/cl1.png";
+    document.getElementById("cloud6").src = "img/cl2.png";
+    document.getElementById("cloud7").src = "img/cl3.png";
+    document.getElementById("cloud8").src = "img/l4.png";
+    document.getElementById("cloud9").src = "img/l4.png";
     // document.getElementById("wave1").style.background = "url(img/waveng.png)";
     document.getElementById("wave1").setAttribute("class", "wave");
     document.getElementById("wave2").setAttribute("class", "wanon");
