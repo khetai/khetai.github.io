@@ -5,51 +5,266 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="paket.css">
-    <link rel="stylesheet" href="swipeffect.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="packets.css">
     <title>Document</title>
 </head>
 
 <body>
-    <header></header>
-    <section class="packets">
-        <div class="packets-content">
-            <div class="packets-title">
-                <span class="main-title title-cl2">sizə uyğun tariflər</span>
-                <h2 class="main-text cl-white">Tarif paketləri</h2>
+    <header class="primary-header flex">
+        <div>
+            <img src="img/logo222.jpg" alt="" class="logo">
+        </div>
+        <button class="mobile-nav-toogle" aria-controls="menu" aria-expanded="false">
+            <span class="sr-only"></span>
+        </button>
+        <nav>
+            <ul id="menu" data-visible="false" class="menu flex">
+                <li class="nav-active">
+                    <a href="#sect1">Home</a>
+                </li>
+                <li>
+                    <a href="#about">About Us</a>
+                </li>
+                <li>
+                    <a href="#services">Services</a>
+                </li>
+                <li>
+                    <a href="#packets">Tarifler</a>
+                </li>
+                <li>
+                    <a href="#team">Team</a>
+                </li>
+                <li>
+                    <a href="#contact">Contact Us</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section class="sect main-sect" id="sect1">
+        <div class="container-h100 row flex">
+            <div class="intro col">
+                <div class="content intro-title">
+                    <h2>Biz Kimik?</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel, ad odio vero repellat provident et iusto ex libero asperiores rem illo repellendus quas fugit, debitis quae, quo explicabo aliquam cum.</p>
+                </div>
+                <div class="intro-btn">
+                    <a href="#">GET STARTED</a>
+                </div>
             </div>
-            <div class="packets-detail">
-                <div class="packets-box">
-                    <div class="packets-info">
-                        <h1>Basliq</h1>
-                        <p>Lorem ipsum, dolor sit amesciunt placeat!</p>
-                        <h3>Paket1</h3>
-                        <h3>Paket2</h3>
-                        <h3>Paket3</h3>
-
+            <div class="intro col">
+                <img class="img" src="img/header-2.svg" alt="" srcset="">
+            </div>
+        </div>
+    </section>
+    <section class="sect sect-about">
+        <div class="about-title container">
+            <span class="main-title cl-black">About us</span>
+            <h2 class="main-text cl-white">adsd asd s </h2>
+        </div>
+        <div class="container flex flex-wrap">
+            <div class="about-us  row">
+                <div class="col-2 abt-img">
+                    <img class="about-img" src="img/about-img.svg" alt="" srcset="">
+                </div>
+                <div class="col-2 about-text">
+                    <p class="about-info">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                    <div class="about-description">
+                        <div class="about-icon"><i class="fa fa-book"></i></div>
+                        <h4 class="desc-title title">morem lorem </h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</p>
+                    </div>
+                    <div class="about-description">
+                        <div class="about-icon"><i class="fa fa-laptop"></i></div>
+                        <h4 class="desc-title title"> lorem morem</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</p>
+                    </div>
+                    <div class="about-description">
+                        <div class="about-icon"><i class="fa fa-home"></i></div>
+                        <h4 class="desc-title title">loremer</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</p>
                     </div>
                 </div>
-                <div class="packets-box">
-                    <div class="swiper mySwiper">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">Slide 1</div>
-                            <div class="swiper-slide">Slide 2</div>
-                            <div class="swiper-slide">Slide 3</div>
-                            <div class="swiper-slide">Slide 4</div>
-                            <div class="swiper-slide">Slide 5</div>
-                            <div class="swiper-slide">Slide 6</div>
-                            <div class="swiper-slide">Slide 7</div>
-                            <div class="swiper-slide">Slide 8</div>
-                            <div class="swiper-slide">Slide 9</div>
-                        </div>
+            </div>
+        </div>
+        <div class="container flex flex-wrap">
+            <div class="about-us-center  row">
+                <div class="col-2 abt-img-2">
+                    <img class="about-img" src="img/about-center.svg" alt="" srcset="">
+                </div>
+                <div class="col-2 about-text-2">
+                    <h4 class="desc-title title">
+                        Lorem ipsum dolor sit amet, consecteturostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </h4>
+                    <div class="about-description-2">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non alias quas magnam impedit similique numquam. Velit laudantium debitis necessitatibus, eum quasi sint quo autem tempora aliquam magni enim error consectetur! Lorem ipsum
+                            dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</p>
+                    </div>
+                    <div class="about-description-2">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda ullam voluptatibus corrupti repellendus. In corrupti laboriosam inventore ratione velit nulla, enim, nesciunt tempora voluptatibus dicta, repellat similique commodi
+                            eveniet eius. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container flex flex-wrap">
+            <div class="about-us  row">
+                <div class="col-2 abt-img">
+                    <img class="about-img" src="img/about-connect.svg" alt="" srcset="">
+                </div>
+                <div class="col-2 about-text">
+                    <h4 class="desc-title title">
+                        Lorem ipsum dolor sit amet, consecteturostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </h4>
+                    <div class="about-description">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non alias quas magnam impedit similique numquam. Velit laudantium debitis necessitatibus, eum quasi sint quo autem tempora aliquam magni enim error consectetur! Lorem ipsum
+                            dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</p>
+                    </div>
+                    <div class="about-description">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda ullam voluptatibus corrupti repellendus. In corrupti laboriosam inventore ratione velit nulla, enim, nesciunt tempora voluptatibus dicta, repellat similique commodi
+                            eveniet eius. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="sect sect-packets">
+        <div class="container packetsname">
+            <div class="packets-names btn-box">
+                <button id="telebe" onclick="opentl()">Tələbə</button>
+                <button id="mellim" onclick="openml()">Müəllim</button>
+                <button id="kurs" onclick="openkl()">Kurslar</button>
+            </div>
+            <div id="telebepk" class="packets packets-telebe">
+                <div class="packet-telebe btn-box">
+                    <button id="telebe1" onclick="opensade()">Tələbə Sadə</button>
+                    <button id="telebe2" onclick="opensilver()">Tələbə Silver</button>
+                    <button id="telebe3" onclick="opengold()">Tələbə Gold</button>
+                </div>
+                <div id="packet1" class="packet-sade packet row flex">
+                    <div class="packet-info col-3">
+                        <h3 class="main-title">Tələbə sadə</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem corrupti obcaecati odit impedit deserunt ex! Necessitatibus expedita, temporibus voluptate ut rem laboriosam commodi voluptatum magnam. Hic accusamus veniam explicabo
+                            repellat?
+                        </p>
+                    </div>
+                    <div class="packet-img col-3">
+                        <img src="img/about-connect.svg" alt="">
+                    </div>
+                </div>
+                <div id="packet2" class="packet-silver packet row flex">
+                    <div class="packet-info col-3">
+                        <h3 class="main-title">Tələbə Silver</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem corrupti obcaecati odit impedit deserunt ex! Necessitatibus expedita, temporibus voluptate ut rem laboriosam commodi voluptatum magnam. Hic accusamus veniam explicabo
+                            repellat?
+                        </p>
+                    </div>
+                    <div class="packet-img col-3">
+                        <img src="img/about-call.svg" alt="">
+                    </div>
+                </div>
+                <div id="packet3" class="packet-gold packet row flex">
+                    <div class="packet-info col-3">
+                        <h3 class="main-title">Tələbə Gold</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem corrupti obcaecati odit impedit deserunt ex! Necessitatibus expedita, temporibus voluptate ut rem laboriosam commodi voluptatum magnam. Hic accusamus veniam explicabo
+                            repellat?
+                        </p>
+                    </div>
+                    <div class="packet-img col-3">
+                        <img src="img/about-center.svg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div id="mellimpk" class="packets packets-mellim">
+                <div class="packet-telebe btn-box">
+                    <button id="mellim1" onclick="openmsade()">Məllim Sadə</button>
+                    <button id="mellim2" onclick="openmsilver()">Məllim Silver</button>
+                    <button id="mellim3" onclick="openmgold()">Məllim Gold</button>
+                </div>
+                <div id="packetml1" class="packet-sade packet row flex">
+                    <div class="packet-info col-3">
+                        <h3 class="main-title">Məllim sadə</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem corrupti obcaecati odit impedit deserunt ex! Necessitatibus expedita, temporibus voluptate ut rem laboriosam commodi voluptatum magnam. Hic accusamus veniam explicabo
+                            repellat?
+                        </p>
+                    </div>
+                    <div class="packet-img col-3">
+                        <img src="img/about-connect.svg" alt="">
+                    </div>
+                </div>
+                <div id="packetml2" class="packet-silver packet row flex">
+                    <div class="packet-info col-3">
+                        <h3 class="main-title">Məllim Silver</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem corrupti obcaecati odit impedit deserunt ex! Necessitatibus expedita, temporibus voluptate ut rem laboriosam commodi voluptatum magnam. Hic accusamus veniam explicabo
+                            repellat?
+                        </p>
+                    </div>
+                    <div class="packet-img col-3">
+                        <img src="img/about-call.svg" alt="">
+                    </div>
+                </div>
+                <div id="packetml3" class="packet-gold  packet row flex">
+                    <div class="packet-info col-3">
+                        <h3 class="main-title">Məllim Gold</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem corrupti obcaecati odit impedit deserunt ex! Necessitatibus expedita, temporibus voluptate ut rem laboriosam commodi voluptatum magnam. Hic accusamus veniam explicabo
+                            repellat?
+                        </p>
+                    </div>
+                    <div class="packet-img col-3">
+                        <img src="img/about-center.svg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div id="kurspk" class="packets packets-kurs">
+                <div class="packet-telebe btn-box">
+                    <button id="kurs1" onclick="openksade()">Kurs Sadə</button>
+                    <button id="kurs2" onclick="openksilver()">Kurs Silver</button>
+                    <button id="kurs3" onclick="openkgold()">Kurs Gold</button>
+                </div>
+                <div id="packetkl1" class="packet-sade packet row flex">
+                    <div class="packet-info col-3">
+                        <h3 class="main-title">Kurs sadə</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem corrupti obcaecati odit impedit deserunt ex! Necessitatibus expedita, temporibus voluptate ut rem laboriosam commodi voluptatum magnam. Hic accusamus veniam explicabo
+                            repellat?
+                        </p>
+                    </div>
+                    <div class="packet-img col-3">
+                        <img src="img/about-connect.svg" alt="">
+                    </div>
+                </div>
+                <div id="packetkl2" class="packet-silver  packet row flex">
+                    <div class="packet-info col-3">
+                        <h3 class="main-title">Kurs Silver</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem corrupti obcaecati odit impedit deserunt ex! Necessitatibus expedita, temporibus voluptate ut rem laboriosam commodi voluptatum magnam. Hic accusamus veniam explicabo
+                            repellat?
+                        </p>
+                    </div>
+                    <div class="packet-img col-3">
+                        <img src="img/about-call.svg" alt="">
+                    </div>
+                </div>
+                <div id="packetkl3" class="packet-gold  packet row flex">
+                    <div class="packet-info col-3">
+                        <h3 class="main-title">Kurs Gold</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem corrupti obcaecati odit impedit deserunt ex! Necessitatibus expedita, temporibus voluptate ut rem laboriosam commodi voluptatum magnam. Hic accusamus veniam explicabo
+                            repellat?
+                        </p>
+                    </div>
+                    <div class="packet-img col-3">
+                        <img src="img/about-center.svg" alt="">
                     </div>
                 </div>
             </div>
         </div>
     </section>
     <footer></footer>
-    <script src="paket.js"></script>
-    <script src="swipeffect.js"></script>
+    <script src="packets.js"></script>
+    <script src="Style.js"></script>
+    <script src="menu.js"></script>
 </body>
 
 </html>
