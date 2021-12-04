@@ -95,9 +95,16 @@ nav ul li a {
             background: hsl(0 0% 100% / 0.5);
             backdrop-filter: blur(1rem);
         }
+        nav ul li a {
+            font-size: 22px;
+            margin: auto;
+            color: black;
+        }
     }
     nav ul li a {
-        font-size: 14px;
+        font-size: 22px;
+        margin: auto;
+        color: white;
     }
     .menu[data-visible="true"] {
         transform: translateX(0%);
