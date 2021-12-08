@@ -1,9 +1,9 @@
 .sect-team {
-    height: 90vh !important;
+    height: 100% !important;
 }
 
 .cont-teams {
-    margin: 35px auto;
+    margin: 5px auto;
     justify-content: center;
     align-items: center;
     display: flex;
@@ -13,7 +13,7 @@
 
 .cont-team-0 {
     width: 90%;
-    margin: 15px auto;
+    margin: 10px auto;
 }
 
 .cont-team {
@@ -88,6 +88,7 @@
     .team {
         width: 100px;
         height: 100px !important;
+        padding: 15px!important;
     }
     .team-info {
         transform: translateY(-60px)!important;
