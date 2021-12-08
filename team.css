@@ -82,11 +82,35 @@
     }
     .team {
         width: 100px;
-        height: 100px;
+        height: 100px !important;
+    }
+    .team-info {
+        transform: translateY(-60px)!important;
+        -webkit-transform: translateY(-60px)!important;
+        -moz-transform: translateY(-60px)!important;
+        -ms-transform: translateY(-60px)!important;
+        -o-transform: translateY(-60px)!important;
+    }
+    .team:hover .team-img {
+        transform: translateY(-20px) !important;
+        -webkit-transform: translateY(-20px) !important;
+        -moz-transform: translateY(-20px) !important;
+        -ms-transform: translateY(-20px) !important;
+        -o-transform: translateY(-20px) !important;
+    }
+    .team-info h3 {
+        font-size: 15px !important;
+    }
+    .team-info p {
+        font-size: 13px !important;
+    }
+    .team:hover {
+        border-radius: 10px;
+        height: 150px;
     }
     .team-img {
         width: 100px;
-        height: 100px;
+        height: 100px !important;
     }
     #tm-5 {
         margin: auto;
@@ -133,8 +157,22 @@
 
 .team-info div {
     color: #333;
-    margin-right: 8px;
+    margin: auto;
     font-size: 18px;
+    justify-content: center;
+}
+
+.tm-icon a {
+    text-decoration: none;
+    color: #333;
+}
+
+.tm-icon a:nth-child(2) {
+    margin: 0 10px;
+}
+
+.tm-icon a i:hover {
+    color: #fff;
 }
 
 .team-info h3 {
