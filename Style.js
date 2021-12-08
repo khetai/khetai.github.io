@@ -15,7 +15,8 @@ window.addEventListener('scroll', () => {
     let rowscroltposition = rowscrolp.getBoundingClientRect().top;
 
     let screenposition = window.innerHeight;
-    if (rowscrol5position < screenposition) {
+    let screen5position = window.innerHeight;
+    if (rowscrol5position < screen5position) {
         rowscrol5.classList.add('scrollactive5');
 
     } else {
