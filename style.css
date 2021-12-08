@@ -406,8 +406,8 @@ body {
         font-size: 25px;
     }
     .desc-title {
-        width: 100%;
-        margin: 15px;
+        width: 90%;
+        margin: auto !important;
         text-align: center;
     }
     .about-description p {

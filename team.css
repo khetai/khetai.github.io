@@ -112,6 +112,9 @@
         width: 100px;
         height: 100px !important;
     }
+    #tm-2 {
+        margin: auto;
+    }
     #tm-5 {
         margin: auto;
     }
