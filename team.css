@@ -88,7 +88,6 @@
     .team {
         width: 100px;
         height: 100px !important;
-        padding: 15px!important;
     }
     .team-info {
         transform: translateY(-60px)!important;
