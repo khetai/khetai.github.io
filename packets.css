@@ -21,6 +21,9 @@
     .col-3 {
         width: 90%;
     }
+    .btn-nav li a {
+        width: auto!important;
+    }
     .btn-nav li a.nav-item-active {
         color: var(--color-nav-active);
         transform: translateY(0) !important;
