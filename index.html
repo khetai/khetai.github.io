@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="team.css">
     <link rel="stylesheet" href="packets.css">
     <title>Document</title>
 </head>
@@ -59,7 +60,7 @@
             </div>
         </div>
     </section>
-    <section class="sect sect-about">
+    <section class="sect sect-about" id="about">
         <div class="about-title container">
             <span class="main-title cl-black">About us</span>
             <h2 class="main-text cl-white">adsd asd s </h2>
@@ -132,15 +133,35 @@
             </div>
         </div>
     </section>
-    <section class="sect sect-packets">
-        <div class="container packetsname">
+    <section class="sect sect-packets" id="packets">
+        <div class="packetsname">
             <div class="packets-names btn-box">
-                <button id="telebe" onclick="opentl()">Tələbə</button>
-                <button id="mellim" onclick="openml()">Müəllim</button>
-                <button id="kurs" onclick="openkl()">Kurslar</button>
+                <ul class="btn-nav">
+                    <div class="btn-navindicator" id="yeni"></div>
+                    <li class="nav-item-active">
+                        <a id="telebe" class="nav-item-active" onclick="opentl()">
+                            <span class="btn-nav-title">Tələbə</span>
+                            <i class="fa fa-laptop"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a id="mellim" onclick="openml(this)">
+                            <span class="btn-nav-title">Müəllim</span>
+                            <i class="fa fa-laptop"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a id="kurs" onclick="openkl()">
+                            <span class="btn-nav-title">Kurslar</span>
+                            <i class="fa fa-laptop"></i>
+                        </a>
+                    </li>
+                </ul>
             </div>
+        </div>
+        <div class="container packet-cont">
             <div id="telebepk" class="packets packets-telebe">
-                <div class="packet-telebe btn-box">
+                <div class="packet-telebe btn-box boxs">
                     <button id="telebe1" onclick="opensade()">Tələbə Sadə</button>
                     <button id="telebe2" onclick="opensilver()">Tələbə Silver</button>
                     <button id="telebe3" onclick="opengold()">Tələbə Gold</button>
@@ -256,6 +277,118 @@
                     </div>
                     <div class="packet-img col-3">
                         <img src="img/about-center.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="sect sect-team" id="team">
+        <div class="content container">
+            <h3 class="main-title cl-black">Our team</h3>
+            <h2 class="main-text cl-white">Programmer</h2>
+        </div>
+        <div class="container cont-teams">
+            <div class="cont-team">
+
+                <div class="team" id="tm-1">
+                    <div class="team-img">
+                        <img src="img/team.jpg" alt="" srcset="">
+                    </div>
+                    <div class="team-info">
+                        <h3>Heading here</h3>
+                        <p>Description goes here</p>
+                        <div>
+                            <i class="fa fa-facebook"></i>
+                            <i class="fa fa-instagram"></i>
+                            <i class="fa fa-twitter"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="team" id="tm-2">
+                    <div class="team-img">
+                        <img src="img/team.jpg" alt="" srcset="">
+                    </div>
+                    <div class="team-info">
+                        <h3>Heading here</h3>
+                        <p>Description goes here</p>
+                        <div>
+                            <i class="fa fa-facebook"></i>
+                            <i class="fa fa-instagram"></i>
+                            <i class="fa fa-twitter"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="team" id="tm-3">
+                    <div class="team-img">
+                        <img src="img/team.jpg" alt="" srcset="">
+                    </div>
+                    <div class="team-info">
+                        <h3>Heading here</h3>
+                        <p>Description goes here</p>
+                        <div>
+                            <i class="fa fa-facebook"></i>
+                            <i class="fa fa-instagram"></i>
+                            <i class="fa fa-twitter"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cont-team">
+
+                <div class="team" id="tm-4">
+                    <div class="team-img">
+                        <img src="img/team.jpg" alt="" srcset="">
+                    </div>
+                    <div class="team-info">
+                        <h3>Heading here</h3>
+                        <p>Description goes here</p>
+                        <div>
+                            <i class="fa fa-facebook"></i>
+                            <i class="fa fa-instagram"></i>
+                            <i class="fa fa-twitter"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="team" id="tm-5">
+                    <div class="team-img">
+                        <img src="img/team.jpg" alt="" srcset="">
+                    </div>
+                    <div class="team-info">
+                        <h3>Heading here</h3>
+                        <p>Description goes here</p>
+                        <div>
+                            <i class="fa fa-facebook"></i>
+                            <i class="fa fa-instagram"></i>
+                            <i class="fa fa-twitter"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="team" id="tm-6">
+                    <div class="team-img">
+                        <img src="img/team.jpg" alt="" srcset="">
+                    </div>
+                    <div class="team-info">
+                        <h3>Heading here</h3>
+                        <p>Description goes here</p>
+                        <div>
+                            <i class="fa fa-facebook"></i>
+                            <i class="fa fa-instagram"></i>
+                            <i class="fa fa-twitter"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="team" id="tm-7">
+                    <div class="team-img">
+                        <img src="img/team.jpg" alt="" srcset="">
+                    </div>
+                    <div class="team-info">
+                        <h3>Heading here</h3>
+                        <p>Description goes here</p>
+                        <div>
+                            <i class="fa fa-facebook"></i>
+                            <i class="fa fa-instagram"></i>
+                            <i class="fa fa-twitter"></i>
+                        </div>
                     </div>
                 </div>
             </div>

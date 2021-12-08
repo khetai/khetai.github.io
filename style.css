@@ -1,7 +1,16 @@
 * {
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
 }
 
 .sect {
@@ -14,6 +23,7 @@
 .main-sect {
     background: #f5f8fd url(img/intro-bg.jpg) center top no-repeat;
     background-size: cover;
+    /* margin-top: 15px; */
 }
 
 .container {
@@ -80,6 +90,27 @@
     font-size: 4em;
     padding-bottom: 15px;
     color: rgb(143, 57, 200);
+    animation: tlanime 3s ease-in;
+    -webkit-animation: tlanime 3s ease-in;
+}
+
+@keyframes tlanime {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+        -webkit-transform: translateX(-100%);
+        -moz-transform: translateX(-100%);
+        -ms-transform: translateX(-100%);
+        -o-transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0%);
+        opacity: 1;
+        -webkit-transform: translateX(0%);
+        -moz-transform: translateX(0%);
+        -ms-transform: translateX(0%);
+        -o-transform: translateX(0%);
+    }
 }
 
 .intro-title p {
@@ -164,7 +195,7 @@
     background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
     background-size: 100%;
     -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
+    /* -webkit-background-clip: text; */
     font-family: 'Praise', cursive;
 }
 
