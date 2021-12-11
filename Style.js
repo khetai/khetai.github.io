@@ -1,3 +1,14 @@
+var sekil = document.querySelectorAll('.option');
+
+sekil.forEach(x => {
+    x.addEventListener("click", function() {
+        sekil.forEach(y => {
+            y.classList.remove("active");
+        });
+        x.classList.add("active")
+    })
+});
+
 window.addEventListener('scroll', () => {
     let rowscrol1 = document.querySelector('.scrool-1');
     let rowscrol2 = document.querySelector('.scrool-2');

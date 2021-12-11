@@ -35,7 +35,7 @@ body {
     margin-right: auto;
     margin-left: auto;
     position: relative;
-    align-self: center!important;
+    /* align-self: center!important; */
 }
 
 .container-h100 {
