@@ -156,6 +156,9 @@
 }
 
 @media (max-width: 768px) {
+    .teams-cont {
+        overflow: none !important;
+    }
     .options {
         display: flex;
         flex-direction: column;
