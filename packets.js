@@ -43,7 +43,7 @@ function opentl() {
     //         x.classList.add('nav-item-active')
     //         let btn_indicator = btnnav.querySelector('.btn-navindicator')
 
-    btn_indicator.style.left = 'calc(0% + 12.7%)'
+    btn_indicator.style.left = '12.7%'
     telebepk.style.transform = "translateX(0)";
     mellimpk.style.transform = "translateX(100%)";
     kurspk.style.transform = "translateX(100%)";
@@ -57,7 +57,7 @@ function openml() {
     telebepk.style.transform = "translateX(100%)";
     mellimpk.style.transform = "translateX(0)";
     kurspk.style.transform = "translateX(100%)";
-    btn_indicator.style.left = 'calc(46% - 5px)'
+    btn_indicator.style.left = '45.8%'
     telebe.classList.remove('nav-item-active')
     mellim.classList.add('nav-item-active')
     kurs.classList.remove('nav-item-active')
@@ -68,7 +68,7 @@ function openkl() {
     telebepk.style.transform = "translateX(100%)";
     mellimpk.style.transform = "translateX(100%)";
     kurspk.style.transform = "translateX(0)";
-    btn_indicator.style.left = 'calc(100% - 21.2%)'
+    btn_indicator.style.left = '78.8%'
     telebe.classList.remove('nav-item-active')
     mellim.classList.remove('nav-item-active')
     kurs.classList.add('nav-item-active')
