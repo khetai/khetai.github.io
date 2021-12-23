@@ -12,6 +12,11 @@
     <link rel="stylesheet" href="team.css">
     <link rel="stylesheet" href="packets.css">
     <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="blogs.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/css/swiper.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="cardb.css">
+
     <title>Document</title>
 </head>
 
@@ -35,6 +40,9 @@
 
                 <li>
                     <a href="#packets">Tarifler</a>
+                </li>
+                <li>
+                    <a href="#blog">Blogs</a>
                 </li>
                 <li>
                     <a href="#team">Team</a>
@@ -137,7 +145,7 @@
             </div>
         </div>
     </section>
-    <section class="sect sect-packets" id="packets">
+    <section class="sect-packets" id="packets">
         <div class="packetsname">
             <div class="packets-names btn-box scrool-p">
                 <ul class="btn-nav">
@@ -164,129 +172,184 @@
             </div>
         </div>
         <div class="container packet-cont">
-            <div id="telebepk" class="packets packets-telebe">
-                <div class="packet-telebe btn-box boxs">
-                    <button id="telebe1" class="scrool-t1" onclick="opensade()">Tələbə Sadə</button>
-                    <button id="telebe2" class="scrool-t2" onclick="opensilver()">Tələbə Silver</button>
-                    <button id="telebe3" class="scrool-t3" onclick="opengold()">Tələbə Gold</button>
+            <div id="telebepk" class="packets packets-telebe ">
+                <div class="container-test">
+                    <div class="card .scrool-t1">
+                        <div class="box">
+                            <div class="content">
+                                <h2>01</h2>
+                                <h3>Card one</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque dolores ducimus odit mollitia perferendis inventore beatae, provident tenetur optio, blanditiis debitis itaque sapiente commodi. Eligendi, perspiciatis. Obcaecati
+                                    dolores qui expedita.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card .scrool-t2">
+                        <div class="box">
+                            <div class="content">
+                                <h2>02</h2>
+                                <h3>Card two</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque dolores ducimus odit mollitia perferendis inventore beatae, provident tenetur optio, blanditiis debitis itaque sapiente commodi. Eligendi, perspiciatis. Obcaecati
+                                    dolores qui expedita.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card .scrool-t3">
+                        <div class="box">
+                            <div class="content">
+                                <h2>03</h2>
+                                <h3>Card thre</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque dolores ducimus odit mollitia perferendis inventore beatae, provident tenetur optio, blanditiis debitis itaque sapiente commodi. Eligendi, perspiciatis. Obcaecati
+                                    dolores qui expedita.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div id="packet1" class="packet-sade packet row flex">
-                    <div class="packet-info col-3 scrool-ts-1">
-                        <h3 class="main-title">Tələbə sadə</h3>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem corrupti obcaecati odit impedit deserunt ex! Necessitatibus expedita, temporibus voluptate ut rem laboriosam commodi voluptatum magnam. Hic accusamus veniam explicabo
-                            repellat?
-                        </p>
-                    </div>
-                    <div class="packet-img col-3 scrool-ts-2">
-                        <img src="img/about-connect.svg" alt="">
-                    </div>
-                </div>
-                <div id="packet2" class="packet-silver packet row flex">
-                    <div class="packet-info col-3">
-                        <h3 class="main-title">Tələbə Silver</h3>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem corrupti obcaecati odit impedit deserunt ex! Necessitatibus expedita, temporibus voluptate ut rem laboriosam commodi voluptatum magnam. Hic accusamus veniam explicabo
-                            repellat?
-                        </p>
-                    </div>
-                    <div class="packet-img col-3">
-                        <img src="img/about-call.svg" alt="">
-                    </div>
-                </div>
-                <div id="packet3" class="packet-gold packet row flex">
-                    <div class="packet-info col-3">
-                        <h3 class="main-title">Tələbə Gold</h3>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem corrupti obcaecati odit impedit deserunt ex! Necessitatibus expedita, temporibus voluptate ut rem laboriosam commodi voluptatum magnam. Hic accusamus veniam explicabo
-                            repellat?
-                        </p>
-                    </div>
-                    <div class="packet-img col-3">
-                        <img src="img/about-center.svg" alt="">
+                <div class="swiper mySwiper swipcard ">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">Slide 1</div>
+                        <div class="swiper-slide">Slide 2</div>
+                        <div class="swiper-slide">Slide 3</div>
+
                     </div>
                 </div>
             </div>
             <div id="mellimpk" class="packets packets-mellim">
-                <div class="packet-telebe btn-box">
-                    <button id="mellim1" onclick="openmsade()">Məllim Sadə</button>
-                    <button id="mellim2" onclick="openmsilver()">Məllim Silver</button>
-                    <button id="mellim3" onclick="openmgold()">Məllim Gold</button>
+                <div class="container-test">
+                    <div class="card">
+                        <div class="box">
+                            <div class="content">
+                                <h2>01</h2>
+                                <h3>Card one</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque dolores ducimus odit mollitia perferendis inventore beatae, provident tenetur optio, blanditiis debitis itaque sapiente commodi. Eligendi, perspiciatis. Obcaecati
+                                    dolores qui expedita.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="box">
+                            <div class="content">
+                                <h2>02</h2>
+                                <h3>Card two</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque dolores ducimus odit mollitia perferendis inventore beatae, provident tenetur optio, blanditiis debitis itaque sapiente commodi. Eligendi, perspiciatis. Obcaecati
+                                    dolores qui expedita.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="box">
+                            <div class="content">
+                                <h2>03</h2>
+                                <h3>Card thre</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque dolores ducimus odit mollitia perferendis inventore beatae, provident tenetur optio, blanditiis debitis itaque sapiente commodi. Eligendi, perspiciatis. Obcaecati
+                                    dolores qui expedita.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div id="packetml1" class="packet-sade packet row flex">
-                    <div class="packet-info col-3">
-                        <h3 class="main-title">Məllim sadə</h3>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem corrupti obcaecati odit impedit deserunt ex! Necessitatibus expedita, temporibus voluptate ut rem laboriosam commodi voluptatum magnam. Hic accusamus veniam explicabo
-                            repellat?
-                        </p>
-                    </div>
-                    <div class="packet-img col-3">
-                        <img src="img/about-connect.svg" alt="">
-                    </div>
-                </div>
-                <div id="packetml2" class="packet-silver packet row flex">
-                    <div class="packet-info col-3">
-                        <h3 class="main-title">Məllim Silver</h3>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem corrupti obcaecati odit impedit deserunt ex! Necessitatibus expedita, temporibus voluptate ut rem laboriosam commodi voluptatum magnam. Hic accusamus veniam explicabo
-                            repellat?
-                        </p>
-                    </div>
-                    <div class="packet-img col-3">
-                        <img src="img/about-call.svg" alt="">
-                    </div>
-                </div>
-                <div id="packetml3" class="packet-gold  packet row flex">
-                    <div class="packet-info col-3">
-                        <h3 class="main-title">Məllim Gold</h3>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem corrupti obcaecati odit impedit deserunt ex! Necessitatibus expedita, temporibus voluptate ut rem laboriosam commodi voluptatum magnam. Hic accusamus veniam explicabo
-                            repellat?
-                        </p>
-                    </div>
-                    <div class="packet-img col-3">
-                        <img src="img/about-center.svg" alt="">
+                <div class="swiper mySwiper swipcard ">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">Slide 1</div>
+                        <div class="swiper-slide">Slide 2</div>
+                        <div class="swiper-slide">Slide 3</div>
+
                     </div>
                 </div>
             </div>
             <div id="kurspk" class="packets packets-kurs">
-                <div class="packet-telebe btn-box">
-                    <button id="kurs1" onclick="openksade()">Kurs Sadə</button>
-                    <button id="kurs2" onclick="openksilver()">Kurs Silver</button>
-                    <button id="kurs3" onclick="openkgold()">Kurs Gold</button>
+                <div class="container-test">
+                    <div class="card">
+                        <div class="box">
+                            <div class="content">
+                                <h2>01</h2>
+                                <h3>Card one</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque dolores ducimus odit mollitia perferendis inventore beatae, provident tenetur optio, blanditiis debitis itaque sapiente commodi. Eligendi, perspiciatis. Obcaecati
+                                    dolores qui expedita.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="box">
+                            <div class="content">
+                                <h2>02</h2>
+                                <h3>Card two</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque dolores ducimus odit mollitia perferendis inventore beatae, provident tenetur optio, blanditiis debitis itaque sapiente commodi. Eligendi, perspiciatis. Obcaecati
+                                    dolores qui expedita.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="box">
+                            <div class="content">
+                                <h2>03</h2>
+                                <h3>Card thre</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque dolores ducimus odit mollitia perferendis inventore beatae, provident tenetur optio, blanditiis debitis itaque sapiente commodi. Eligendi, perspiciatis. Obcaecati
+                                    dolores qui expedita.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div id="packetkl1" class="packet-sade packet row flex">
-                    <div class="packet-info col-3">
-                        <h3 class="main-title">Kurs sadə</h3>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem corrupti obcaecati odit impedit deserunt ex! Necessitatibus expedita, temporibus voluptate ut rem laboriosam commodi voluptatum magnam. Hic accusamus veniam explicabo
-                            repellat?
-                        </p>
-                    </div>
-                    <div class="packet-img col-3">
-                        <img src="img/about-connect.svg" alt="">
-                    </div>
-                </div>
-                <div id="packetkl2" class="packet-silver  packet row flex">
-                    <div class="packet-info col-3">
-                        <h3 class="main-title">Kurs Silver</h3>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem corrupti obcaecati odit impedit deserunt ex! Necessitatibus expedita, temporibus voluptate ut rem laboriosam commodi voluptatum magnam. Hic accusamus veniam explicabo
-                            repellat?
-                        </p>
-                    </div>
-                    <div class="packet-img col-3">
-                        <img src="img/about-call.svg" alt="">
-                    </div>
-                </div>
-                <div id="packetkl3" class="packet-gold  packet row flex">
-                    <div class="packet-info col-3">
-                        <h3 class="main-title">Kurs Gold</h3>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem corrupti obcaecati odit impedit deserunt ex! Necessitatibus expedita, temporibus voluptate ut rem laboriosam commodi voluptatum magnam. Hic accusamus veniam explicabo
-                            repellat?
-                        </p>
-                    </div>
-                    <div class="packet-img col-3">
-                        <img src="img/about-center.svg" alt="">
+                <div class="swiper mySwiper swipcard ">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">Slide 1</div>
+                        <div class="swiper-slide">Slide 2</div>
+                        <div class="swiper-slide">Slide 3</div>
+
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="sect sect-team">
+
+    <section class="blogs-sect">
+        <!-- <div class="blogs-title ">
+            <span class="main-title cl-black">Blogs</span>
+            <h2 class="main-text cl-white">Our latest blog posts</h2>
+        </div> -->
+        <div class="blog-slider">
+            <div class="blog-slider__wrp swiper-wrapper">
+                <div class="blog-slider__item swiper-slide">
+                    <div class="blog-slider__img">
+                        <img src="https://images.unsplash.com/photo-1569124589354-615739ae007b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" alt="">
+                    </div>
+                    <div class="blog-slider__content">
+                        <span class="blog-slider__code">26 December 2019</span>
+                        <div class="blog-slider__title">Lorem Ipsum Dolor</div>
+                        <div class="blog-slider__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae voluptate repellendus magni illo ea animi? </div>
+                        <a href="#" class="blog-slider__button">READ MORE</a>
+                    </div>
+                </div>
+
+                <div class="blog-slider__item swiper-slide">
+                    <div class="blog-slider__img">
+                        <img src="https://images.unsplash.com/photo-1595868228899-abc8fabb3447?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" alt="">
+                    </div>
+                    <div class="blog-slider__content">
+                        <span class="blog-slider__code">26 December 2019</span>
+                        <div class="blog-slider__title">Lorem Ipsum Dolor2</div>
+                        <div class="blog-slider__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae voluptate repellendus magni illo ea animi?</div>
+                        <a href="#" class="blog-slider__button">READ MORE</a>
+                    </div>
+                </div>
+
+                <div class="blog-slider__item swiper-slide">
+                    <div class="blog-slider__img">
+                        <img src="https://images.unsplash.com/photo-1524638431109-93d95c968f03?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80" alt="">
+                    </div>
+                    <div class="blog-slider__content">
+                        <span class="blog-slider__code">26 December 2019</span>
+                        <div class="blog-slider__title">Lorem Ipsum Dolor</div>
+                        <div class="blog-slider__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae voluptate repellendus magni illo ea animi?</div>
+                        <a href="#" class="blog-slider__button">READ MORE</a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="blog-slider__pagination"></div>
+        </div>
+
+    </section>
+    <section class="sect-team">
         <div class="container">
             <div class="conten content-team">
                 <h2 class="main-title">Our team</h2>
@@ -382,7 +445,7 @@
             </div>
         </div>
     </section>
-    <section class="sect">
+    <section class="sect-contact">
         <div class="contact-us">
             <span class="big-circle"></span>
             <img src="img/shape.png" class="square" alt="" />
@@ -462,9 +525,18 @@
 
     </section>
     <footer></footer>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            effect: "cards",
+            grabCursor: true,
+        });
+    </script>
     <script src="packets.js"></script>
     <script src="Style.js"></script>
     <script src="menu.js"></script>
+    <script src="blogs.js"></script>
 </body>
 
 </html>

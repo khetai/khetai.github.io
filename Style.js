@@ -75,18 +75,22 @@ window.addEventListener('scroll', () => {
         rowscrolp.classList.remove('scrollactivep');
 
     }
-    if (rowscroltposition < screenposition) {
-        rowscrolt1.classList.add('scrollactivet');
-        rowscrolt2.classList.add('scrollactivet');
-        rowscrolt3.classList.add('scrollactivet');
 
-    } else {
-        rowscrolt1.classList.remove('scrollactivet');
-        rowscrolt2.classList.remove('scrollactivet');
-        rowscrolt3.classList.remove('scrollactivet');
-    }
 
 });
 window.addEventListener('scroll', () => {
 
+});
+var swiper = new Swiper('.blog-slider', {
+    spaceBetween: 30,
+    effect: 'fade',
+    loop: true,
+    mousewheel: {
+        invert: false,
+    },
+    // autoHeight: true,
+    pagination: {
+        el: '.blog-slider__pagination',
+        clickable: true,
+    }
 });

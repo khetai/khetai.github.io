@@ -1,12 +1,17 @@
 .teams-cont {
     width: 100% !important;
-    margin: 5px auto;
+    height: 80vh;
+    /* margin: 5px auto; */
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    height: 80vh;
+    /* height: 86vh; */
+}
+
+.sect-team {
+    height: auto !important;
 }
 
 .credit {
@@ -156,8 +161,12 @@
 }
 
 @media (max-width: 768px) {
+    .sect-team {
+        height: auto !important;
+    }
     .teams-cont {
         overflow: none !important;
+        height: 100vh
     }
     .options {
         display: flex;
@@ -166,6 +175,11 @@
         max-height: 800px;
         min-width: 70%;
         max-width: 100%;
+    }
+    .option:not(.active) {
+        flex-grow: 1;
+        border-radius: 30px;
+        margin: 3px auto !important;
     }
     .option {
         width: 90%;

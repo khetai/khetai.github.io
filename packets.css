@@ -1,19 +1,7 @@
-/* @media (min-width:780px)and(max-width: 1280px) {
-    .btn-navindicator {
-        left: calc(0% + 1%) !important;
-    }
-    .btn-navindicator {
-        display: none;
-    }
-} */
-
-@media (min-width:1280px)and(max-width: 1524px) {
-    .btn-navindicator {
-        left: calc(0% + 5%) !important;
-    }
-}
-
 @media (max-width: 768px) {
+    .sect {
+        overflow: normal !important;
+    }
     .btn-box {
         width: 90%;
         margin: 2 auto;
@@ -53,9 +41,6 @@
     .packetsname {
         margin: 5px auto !important;
     }
-    .packet-cont {
-        height: 100vh !important;
-    }
     .btn-nav li a.nav-item-active i {
         font-size: 34px !important;
         transform: translateY(0)!important;
@@ -67,17 +52,11 @@
     .btn-navindicator {
         display: none;
     }
-    .packet-sade,
-    .packet-silver,
-    .packet-gold {
-        justify-content: none;
-        align-items: center;
-        margin: 15px auto;
+    .swipcard {
+        display: block !important;
     }
-    .packet-info p {
-        font-size: 14px !important;
-        width: 70%;
-        margin: auto;
+    .container-test {
+        display: none !important;
     }
 }
 
@@ -160,7 +139,7 @@
     position: absolute;
     z-index: 1;
     top: 22px;
-    left: 12.7%;
+    left: 11.4%;
     transition: left .8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     -webkit-transition: left .8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     -moz-transition: left .8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -219,14 +198,6 @@
     -o-border-radius: 20px;
 }
 
-.packet-sade,
-.packet-silver,
-.packet-gold {
-    justify-content: center;
-    align-items: center;
-    margin: 15px auto;
-}
-
 .packetsname {
     width: 90%;
     margin: 35px auto 20px;
@@ -237,30 +208,31 @@
 }
 
 .packet-cont {
-    height: 70vh;
+    height: 80vh;
     overflow: hidden;
 }
 
 .packets {
     width: 100%;
-    height: 70vh;
-    overflow: hidden;
+    height: auto;
+    /* display: none; */
     align-items: center;
     margin-top: 25px;
     position: absolute;
-    transform: translateX(100%);
-    -webkit-transform: translateX(100%);
-    -moz-transform: translateX(100%);
-    -ms-transform: translateX(100%);
-    -o-transform: translateX(100%);
-    transition: 0.3s;
-    -webkit-transition: 0.3s;
-    -moz-transition: 0.3s;
-    -ms-transition: 0.3s;
-    -o-transition: 0.3s;
+    transform: translateX(200%);
+    -webkit-transform: translateX(200%);
+    -moz-transform: translateX(200%);
+    -ms-transform: translateX(200%);
+    -o-transform: translateX(200%);
+    transition: 0.6s ease-in-out;
+    -webkit-transition: 0.6s ease-in-out;
+    -moz-transition: 0.6s ease-in-out;
+    -ms-transition: 0.6s ease-in-out;
+    -o-transition: 0.6s ease-in-out;
 }
 
 #telebepk {
+    /* display: block; */
     transform: translateX(0);
     -webkit-transform: translateX(0);
     -moz-transform: translateX(0);
@@ -269,7 +241,7 @@
 }
 
 .packet {
-    height: 100%;
+    height: auto;
     position: absolute;
     transform: translateX(100%);
     transition: 0.6s;
@@ -302,15 +274,180 @@
 }
 
 .packet-info p {
-    font-size: 24px;
+    font-size: 22px;
     width: 70%;
     margin: auto;
 }
 
+.packet-info ul {
+    width: 60%;
+    margin: auto 32%;
+}
 
-/* .packet-img {} */
+.packet-info ul li {
+    text-align: left;
+    font-size: 22px;
+    width: 70%;
+    margin: auto;
+}
 
 .packet-img img {
     width: 100%;
     height: auto;
+}
+
+.container-test {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 40px 0;
+}
+
+@media (max-width: 768px) {
+    .container-test {
+        flex-wrap: wrap !important;
+    }
+}
+
+.container-test .card {
+    position: relative;
+    width: 320px;
+    height: 440px;
+    box-shadow: Inset 5px 5px 5px rgba(0, 0, 0, 0.05), inset -5px -5px -5px rgba(255, 255, 255, 0.5), 5px 5px 5px rgba(0, 0, 0, 0.05), -5px -5px -5px rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
+    margin: 30px;
+}
+
+.container-test .card .box {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    background: #ebf5fc;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+.container-test .card:hover .box {
+    transform: translateY(-50px);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+    background: linear-gradient(45deg, #a362c2, #5a3eb6);
+}
+
+.container-test .card .box .content {
+    padding: 20px;
+    text-align: center;
+}
+
+.container-test .card .box .content h2 {
+    position: absolute;
+    top: -10px;
+    right: 30px;
+    font-size: 8em;
+    color: rgba(0, 0, 0, 0.02);
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    pointer-events: none;
+}
+
+.container-test .card:hover .box .content h2 {
+    color: rgba(0, 0, 0, 0.05);
+}
+
+.container-test .card .box .content h3 {
+    font-size: 1.8em;
+    color: #777;
+    z-index: 1;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+.container-test .card:hover .box .content h3 {
+    color: #FFF;
+}
+
+.container-test .card .box .content p {
+    font-size: 1em;
+    font-weight: 300;
+    color: #777;
+    z-index: 1;
+    transition: 0.5s;
+}
+
+.container-test .card:hover .box .content p {
+    color: rgb(194, 188, 188);
+}
+
+.swipcard {
+    display: none;
+}
+
+.swiper {
+    width: 240px;
+    height: 320px;
+}
+
+.swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 18px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.swiper-slide:nth-child(1n) {
+    background-color: rgb(206, 17, 17);
+}
+
+.swiper-slide:nth-child(2n) {
+    background-color: rgb(0, 140, 255);
+}
+
+.swiper-slide:nth-child(3n) {
+    background-color: rgb(10, 184, 111);
+}
+
+.swiper-slide:nth-child(4n) {
+    background-color: rgb(211, 122, 7);
+}
+
+.swiper-slide:nth-child(5n) {
+    background-color: rgb(118, 163, 12);
+}
+
+.swiper-slide:nth-child(6n) {
+    background-color: rgb(180, 10, 47);
+}
+
+.swiper-slide:nth-child(7n) {
+    background-color: rgb(35, 99, 19);
+}
+
+.swiper-slide:nth-child(8n) {
+    background-color: rgb(0, 68, 255);
+}
+
+.swiper-slide:nth-child(9n) {
+    background-color: rgb(218, 12, 218);
+}
+
+.swiper-slide:nth-child(10n) {
+    background-color: rgb(54, 94, 77);
 }
