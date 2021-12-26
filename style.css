@@ -11,6 +11,7 @@ html {
 body {
     margin: 0;
     padding: 0;
+    background: linear-gradient(to bottom, #dfeeeb 20%, #c0ecf2 40%, #a2e1eb 60%, #33c1d6 80%, #1e8696 100%)
 }
 
 .sect {
@@ -222,7 +223,7 @@ body {
     text-align: left;
     font-size: 4em;
     padding-bottom: 15px;
-    color: rgb(143, 57, 200);
+    color: #1e8696;
     animation: tlanime 2s;
     -webkit-animation: tlanime 2s;
 }
@@ -309,7 +310,7 @@ body {
     text-decoration: none;
     border-radius: 20px;
     color: black;
-    background: rgb(12, 82, 196);
+    background: #1e8696;
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
     -ms-border-radius: 20px;
@@ -317,7 +318,7 @@ body {
 }
 
 .intro-btn a:hover {
-    background-color: rgb(72, 153, 190);
+    background-color: #d5f3f7;
 }
 
 @media (max-width: 768px) {
@@ -402,6 +403,7 @@ body {
     width: 100%;
     position: relative;
     align-self: center!important;
+    /* background-color: #d5f3f7; */
 }
 
 .about-us {

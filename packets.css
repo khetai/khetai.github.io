@@ -1,3 +1,8 @@
+.sect-packets {
+    /* background: #c0ecf2; */
+    padding-top: 30px;
+}
+
 @media (max-width: 768px) {
     .sect {
         overflow: normal !important;
@@ -61,10 +66,10 @@
 }
 
 :root {
-    --bg-nav: #f1a708;
-    --color-nav: #d707f3;
+    --bg-nav: #d5f3f7;
+    --color-nav: #33c1d6;
     --color-nav-hover: #dff9fb;
-    --color-nav-active: #fff;
+    --color-nav-active: #1e8696;
 }
 
 .btn-nav {
@@ -135,7 +140,7 @@
     border-radius: 50%;
     background: var(--bg-nav);
     border-radius: 50%;
-    border: 10px solid #fff;
+    border: 10px solid #c0ecf2;
     position: absolute;
     z-index: 1;
     top: 22px;
@@ -155,7 +160,7 @@
     left: -31px;
     width: 25px;
     height: 25px;
-    box-shadow: 5px 10px 0 0 #fff;
+    box-shadow: 5px 10px 0 0 #c0ecf2;
     border-bottom-right-radius: 20px;
     background: transparent;
 }
@@ -168,7 +173,7 @@
     right: -32px;
     width: 25px;
     height: 25px;
-    box-shadow: -8px 8px 0 #fff;
+    box-shadow: -8px 8px 0 #c0ecf2;
     border-bottom-left-radius: 20px;
     background: transparent;
 }
@@ -200,7 +205,7 @@
 
 .packetsname {
     width: 90%;
-    margin: 35px auto 20px;
+    margin: 0 auto 20px;
     align-items: center;
     position: relative;
     justify-content: center;

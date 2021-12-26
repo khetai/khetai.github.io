@@ -1,7 +1,7 @@
 .sect-contact {
     width: 100%;
     height: auto;
-    padding: 10px 0;
+    /* padding: 10px 0 0 0; */
 }
 
 .contact-us {
@@ -9,7 +9,7 @@
     width: 100%;
     min-height: 100vh;
     padding: 2rem;
-    background-image: radial-gradient(circle, #48d390, #00d0b5, #00cbd4, #00c3e8, #37b8f0, #4bbaf3, #5bbdf6, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+    /* background-image: radial-gradient(circle, #48d390, #00d0b5, #00cbd4, #00c3e8, #37b8f0, #4bbaf3, #5bbdf6, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1); */
     /* background-color: #60cec5; */
     overflow: hidden;
     display: flex;
