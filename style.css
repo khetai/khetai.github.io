@@ -1,8 +1,88 @@
 * {
     margin: 0;
     padding: 0;
-    /* overflow-x: hidden; */
 }
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+#scrolPath {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 10px;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.5);
+    z-index: 10;
+}
+
+#progressbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 10px;
+    z-index: 10000;
+    background: linear-gradient( to top, #008aff, #00ffe7);
+    animation: animebar 5s linear infinite;
+    -webkit-animation: animebar 5s linear infinite;
+}
+
+@keyframes animebar {
+    0%,
+    100% {
+        filter: hue-rotate(0deg);
+        -webkit-filter: hue-rotate(0deg);
+    }
+    50% {
+        filter: hue-rotate(360deg);
+        -webkit-filter: hue-rotate(360deg);
+    }
+}
+
+#progressbar::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient( to top, #008aff, #00ffe7);
+    filter: blur(30px);
+    -webkit-filter: blur(10px);
+}
+
+#progressbar::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient( to top, #008aff, #00ffe7);
+    filter: blur(30px);
+    -webkit-filter: blur(30px);
+}
+
+
+/* 
+::-webkit-scrollbar {
+    width: .4rem;
+}
+
+::-webkit-scrollbar-track {
+    background: #208b9b;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #89d5e2;
+    border: .1em solid #208b9b;
+    border-radius: 100vw;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: red;
+} */
 
 html {
     scroll-behavior: smooth;
@@ -11,7 +91,7 @@ html {
 body {
     margin: 0;
     padding: 0;
-    background: linear-gradient(to bottom, #dfeeeb 20%, #c0ecf2 40%, #a2e1eb 60%, #33c1d6 80%, #1e8696 100%)
+    background: linear-gradient(to bottom, #f5f8fd 20%, #c0ecf2 40%, #a2e1eb 60%, #33c1d6 80%, #1e8696 100%)
 }
 
 .sect {
@@ -625,6 +705,15 @@ body {
         margin: auto;
         text-align: center;
     }
+}
+
+#preloader {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #fff url(img/OFAF.gif) no-repeat center center;
+    background-size: 30%;
+    z-index: 100000;
 }
 
 
